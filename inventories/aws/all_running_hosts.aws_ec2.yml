@@ -5,6 +5,7 @@ regions:
 filters:
   "instance-state-name": running
   tag:Environment: Prod
+  tag:Environment: staging
 strict_permissions: False
 hostnames:
   - tag:Name
