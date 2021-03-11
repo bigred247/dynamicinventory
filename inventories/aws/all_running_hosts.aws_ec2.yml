@@ -4,8 +4,7 @@ regions:
   - eu-west-2
 filters:
   "instance-state-name": running
-  tag:Environment: Prod
-  tag:Environment: staging
+  tag:Environment: Prod, Environment: staging
 strict_permissions: False
 hostnames:
   - tag:Name
