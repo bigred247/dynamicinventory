@@ -12,5 +12,3 @@ keyed_groups:
   key: tags
 compose:
   ansible_host: private_ip_address
-# Can use IAM role in future to avoid IAM users and static passwords
-#iam_role_arn: "asdfas"
