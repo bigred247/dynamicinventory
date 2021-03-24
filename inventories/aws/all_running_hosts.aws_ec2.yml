@@ -11,7 +11,5 @@ hostnames:
 keyed_groups:
 - prefix: tag
   key: tags
-#- key: placement.region
-#  prefix: aws_region
 compose:
   ansible_host: private_ip_address
