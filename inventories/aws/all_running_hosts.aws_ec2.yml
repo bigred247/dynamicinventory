@@ -12,8 +12,8 @@ hostnames:
 #groups:
 #  ec2: true
 keyed_groups:
-# Create a group with the based on the 'Role'
-- key: tags['Role'] tags['Application'] tags['Environment']
+# Create a group with the based on the 'Role_Application_Environment' e.g. 
+- key: tags['Role'], tags['Application'], tags['Environment']
 # Create a group per region e.g. aws_region_eu_west_2
 - key: placement.region
   prefix: aws_region
