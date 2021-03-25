@@ -9,6 +9,7 @@ regions:
 strict_permissions: False
 hostnames:
   - tag:Name
+  - name: 'private-ip-address'
 #groups:
 #  ec2: true
 keyed_groups:
