@@ -12,13 +12,13 @@ hostnames:
 #groups:
 #  ec2: true
 keyed_groups:
-# Add hosts to tag_Name_Value groups for each Name/Value tag pair
-#- prefix: tag
-#  key: tags
+# Create a group with the based on the 'Role'
+- key: tags['Role']
 # Create a group per region e.g. aws_region_eu_west_2
 - key: placement.region
   prefix: aws_region
-- key: tags['Role']
+# Create a group (or groups) based on the value of a custom tag "Role" and add them to a metagroup called "project"
+#- key: tags['Role']
 #  prefix: Prod
 #  parent_group: "Omnia"
 compose:
