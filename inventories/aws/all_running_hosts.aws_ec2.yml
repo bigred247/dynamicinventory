@@ -1,5 +1,5 @@
 plugin: aws_ec2
-cache: no
+#cache: no
 regions:
   - eu-west-1
   - eu-west-2
