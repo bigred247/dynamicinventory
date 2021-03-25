@@ -26,3 +26,5 @@ keyed_groups:
 #  parent_group: "Omnia"
 compose:
   ansible_host: private_ip_address
+  ec2_private_ip_address: private_ip_address
+
