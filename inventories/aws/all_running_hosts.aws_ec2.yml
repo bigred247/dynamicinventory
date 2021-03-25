@@ -19,7 +19,7 @@ keyed_groups:
 - key: placement.region
   prefix: aws_region
 - key: tags['Role']
-  prefix: Omnia
-  parent_group: "Prod"
+  prefix: Prod
+  parent_group: "Omnia"
 compose:
   ansible_host: private_ip_address
