@@ -18,7 +18,7 @@ keyed_groups:
 # Create a group per region e.g. aws_region_eu_west_2
 - key: placement.region
   prefix: aws_region
-#- key: tags['Role']
+- key: tags['Role']
 #  prefix: Prod
 #  parent_group: "Omnia"
 compose:
