@@ -13,8 +13,7 @@ hostnames:
 #  ec2: true
 keyed_groups:
 # Create a group with the based on the 'Role_Application_Environment' e.g.  ___Web____Omnia____Dev__
-#- key: tags['Application'],tags['Environment'],tags['Role'] 
-- key: tags['Application', 'Environment', 'Role'] 
+- key: tags['Application'],tags['Environment'],tags['Role'] 
 #- key: tags['Application']
 #- key: tags['Environment']
 #- key: tags['Role']
