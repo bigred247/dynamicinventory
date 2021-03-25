@@ -13,13 +13,13 @@ hostnames:
 #  ec2: true
 keyed_groups:
 # Add hosts to tag_Name_Value groups for each Name/Value tag pair
-#- prefix: tag
-#  key: tags
+- prefix: tag:Role
+  key: tags
 # Create a group per region e.g. aws_region_eu_west_2
 - key: placement.region
   prefix: aws_region
-- key: tags['Role']
-  prefix: Prod
-  parent_group: "Omnia"
+#- key: tags['Role']
+#  prefix: Prod
+#  parent_group: "Omnia"
 compose:
   ansible_host: private_ip_address
