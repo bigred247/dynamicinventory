@@ -9,6 +9,8 @@ regions:
 strict_permissions: False
 hostnames:
   - tag:Name
+groups:
+  ec2: true
 keyed_groups:
 # Add hosts to tag_Name_Value groups for each Name/Value tag pair
 - prefix: tag
