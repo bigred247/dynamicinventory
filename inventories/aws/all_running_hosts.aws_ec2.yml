@@ -13,10 +13,11 @@ hostnames:
 #  ec2: true
 keyed_groups:
 # Create a group with the based on the 'Role_Application_Environment' e.g.  ___Web____Omnia____Dev__
-#- key: tags['Role'], tags['Application'], tags['Environment']
-- key: tags['Application']
-- key: tags['Environment']
-- key: tags['Role']
+#- key: tags['Application'],tags['Environment'],tags['Role'] 
+- key: tags['Application', 'Environment', 'Role'] 
+#- key: tags['Application']
+#- key: tags['Environment']
+#- key: tags['Role']
 # Create a group per region e.g. aws_region_eu_west_2
 - key: placement.region
   prefix: aws_region
