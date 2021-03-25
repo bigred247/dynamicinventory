@@ -13,8 +13,8 @@ hostnames:
 #  ec2: true
 keyed_groups:
 # Add hosts to tag_Name_Value groups for each Name/Value tag pair
-- prefix: tag:Role
-  key: tags
+- prefix: tag
+  key: tags:Role
 # Create a group per region e.g. aws_region_eu_west_2
 - key: placement.region
   prefix: aws_region
