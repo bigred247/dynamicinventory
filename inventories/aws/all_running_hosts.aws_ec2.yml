@@ -27,4 +27,6 @@ keyed_groups:
 compose:
   ansible_host: private_ip_address
   ec2_private_ip_address: private_ip_address
+  ec2_private_dns_name: private_dns_name
+
 
